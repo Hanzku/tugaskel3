@@ -2,6 +2,11 @@
 declare(strict_types=1);
 
 $routes = [
+    'guru.php' => 'guru.php',
+    'form_guru.php' => 'form_guru.php',
+    'detail_guru.php' => 'detail_guru.php',
+    'hapus_guru.php' => 'hapus_guru.php',
+    'proses_guru.php' => 'proses_guru.php',
     'index.php' => 'index.php',
     'pelajaran.php' => 'pelajaran.php',
     'form_pelajaran.php' => 'form_pelajaran.php',

@@ -2,3 +2,4 @@
 /.tools/
 /reference-temp/
 .vercel
+.env*.local

@@ -49,11 +49,12 @@ function db(): PDO
             PDO::ATTR_EMULATE_PREPARES => false,
         ];
         if (getenv('DB_SSL') === '1') {
-            $caPath = __DIR__ . '/../config/isrgrootx1.pem';
+            $caPath = getenv('DB_SSL_CA') ?: __DIR__ . '/../config/isrgrootx1.pem';
             if (!is_file($caPath)) {
                 throw new RuntimeException('Sertifikat CA untuk koneksi database TLS tidak tersedia.');
             }
             $options[PDO::MYSQL_ATTR_SSL_CA] = $caPath;
+            $options[PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT] = true;
         }
 
         $connection = new PDO(
