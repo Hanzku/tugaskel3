@@ -13,6 +13,7 @@ $routes = [
     'detail_pelajaran.php' => 'detail_pelajaran.php',
     'hapus_pelajaran.php' => 'hapus_pelajaran.php',
     'proses_pelajaran.php' => 'proses_pelajaran.php',
+    'diag.php' => 'diag.php',
 ];
 $script = $_GET['script'] ?? 'index.php';
 
