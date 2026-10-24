@@ -12,6 +12,7 @@ function page_start(string $title, string $crumb = '', bool $guru = false): void
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title><?= e($title) ?> · SIA SMK Malaka</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/favicon.svg">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
